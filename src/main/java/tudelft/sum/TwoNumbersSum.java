@@ -9,7 +9,6 @@ class TwoNumbersSum {
     public ArrayList<Integer> addTwoNumbers(ArrayList<Integer> first, ArrayList<Integer> second) {
         Collections.reverse(first);
         Collections.reverse(second);
-
         int complement = 0;
         ArrayList<Integer> result = new ArrayList<>();
 
@@ -24,8 +23,8 @@ class TwoNumbersSum {
             }
             result.add(i, total);
         }
+        //Collections.reverse(result);
 
-        Collections.reverse(result);
         return result;
     }
 }
